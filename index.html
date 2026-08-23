@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color: lavender;
+text-align: center;
+}
+h1 {
+color: purple;
+font-size: 40px;
+margin-top; 30px
+}
+h1 {
+text-shadow: 2px 2px 5px
+#b9a0d4;
+}
+h2{
+color: purple;
+text-align: center;
+margin-top: 30px;
+font-size: 28px;
+}
+h3{
+color: #6a3dad;
+text-align: centre;
+}
+p{
+font-size: 18px;
+color: #555;
+line-height: 1.6;
+}
+
+h1 {
+font-size:40px;
+color: purple;
+}
+
+p {
+font-size: 20px;
+color: #555;
+max-width: 700px;
+}
+h3 {
+font-size: 26px;
+color: purple;
+}
+button {
+background-color: purple;
+color:white;
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+font-size: 16px;
+}
+.project {
+background-color: white;
+padding: 20px;
+margin:20px auto;
+border-radius: 15px;
+max-width: 500px;
+box-shadow: 0 4px 10px;
+rgba(0,0,0,0.1)
+transition: transform 0.2s;
+}
+.project:hover {
+transform: translateY(-5px);
+}
+</style>
+     <title>Wajiha Web Developer</title>
+</head>
+<body> 
+     <h1>Welcome to Wajiha Web Developer</h1>
+      <p>Explore my web projects, creative work and digital experiences.</p>
+      <a href="#projects"><button> Explore My Projects</button></a>
+      <h2>About Me</h2>
+      <p>Hi! I'm Wajiha, a web developer creating clean, creative and practical web experiences. Wajiha Web Developer is a space for exploring my projects and digital work,</p>
+      <h2 id="projects">My Projects</h2>
+<p>Explore the websites, tools and creative projects I build as I continue learning web development  .</p>
+<div class="project"
+id="my-project">
+<h3>My First Website</h3>
+<p>A responsive HTML and CSS website showcasing a clean layout, modern design and practical web development.</p>
+<a href="myfirstwebsite.html"><button>View
+Project</button></a>
+</div>
+<div class="project">
+<h2>More Projects Coming Soon</h2>
+<p>New web projects and creative digital work will be added here.</p>
+</div>
+<div class="project">
+<h2>My Skills</h2>
+<p>HTML & CSS Development . Web Design . Canva Design . Responsive Layouts</p>
+</div>
+<div class="project">
+<h2>My goal</h2>
+<p>My goal is to learn, create and build beautiful websites.</p>
+</div>
+<div class="project">
+<h2>Contact Me</h2>
+<p>You can contact me about my creative work and projects.</p>
+</div>
+<div class="project">
+<h2>What I Create</h2>
+<p>Simple and responsive websites</p>
+<p>Canva designs and creative visuals</p>
+<p>HTML & CSS web projects</p>
+<p>Clean and modern website layouts</p>
+</div>
+<section class="web-tools">
+<div class="tool-info">
+<h2>Web Tools</h2>
+<p>
+Explore useful ideas to improve your web design projects.
+</p>
+<p>
+Get a quick design tip with every click.
+</p>
+</div>
+<div class="tool-card">
+<h2>Web Design Tip Generater</h2>
+<p id="designTip">
+Click the buttton to get a useful web design tip. 
+</p>
+<button
+onclick="generateDesignTip()">
+Get Design Tip
+</button>
+</div>
+</section>
+<style>
+.web-tools {
+display: flex;
+justify-content: 
+space-between;
+align=items: center;
+gap: 40px;
+max-width: 1000px;
+margin: 50px auto;
+padding: 30px;
+}
+.tool-info {
+flex: 1;
+text=align: left;
+}
+.color=tool {
+flex: 1;
+background: white;
+padding: 25px;
+border-radius: 15px;
+box-shadow: 0px 10px 25px
+rgba(0,0,0,0,1);
+}
+.palette {
+display: flex;
+gap: 10px;
+margin: 20px 0;
+}
+.color-box {
+flex: 1;
+text-align: centre;
+}
+.color-preview {
+height: 80px;
+width: 100%;
+background-color: #B9A0D4
+border-radius: 10px;
+}
+.color-tool button {
+background-color: purple;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+}
+@media (max-width: 700px) {
+.web-tools {
+flex-direction: column;
+}
+text-align: centre;
+}
+.tool-info {
+text-align: center;
+}
+.site-footer {
+text-align: center;
+margin-top: 50px;
+padding: 30px;
+background: #f3eefe;
+border-top: 1px solid
+#ddd6f3;
+color: #555;
+}
+.site-footer h3 {
+color: #6a4caf;
+margin-bottom: 8px;
+}
+.site-footer p {
+margin: 6px 0;
+font-size: 14px;
+}
+</style>
+<script>
+function randomColor() {
+return "#" +
+Math.floor(Math.random() * 16777215)
+.toString(16)
+.padStart(6, "0");
+}
+function generateDesignTip() {
+const tips = [
+"Keep your website colors consistent.",
+"Use enough spacing between sections.",
+"Keep your headings clear and easy to read.",
+"Keep your navigation simple and easy to use.",
+"Make sure your website looks good on mobile devices.",
+"Keep your design clean and professional.",
+];
+const randomTip =
+tips[Math.floor(Math.random() * tips.length)];
+document.getElementById("designTip").textContent = randomTip;
+}
+</script>
+<footer class="site-footer">
+<h3>Wajiha Web Developer</h3>
+<p>Personal Portfolio Website</p>
+<p>2026 Wajiha. All Rights Reserved.</p>
+<p.Designed &amp; developed by Wajiha.</p>
+</footer>
+</body>
+</html>
